@@ -5,7 +5,7 @@ gpu_count=$(nvidia-smi -L | wc -l)
 while read r
 do
     lm_eval --model vllm \
-    --model_args pretrained=allenai/OLMo-2-1124-7B,revision=$r,tensor_parallel_size=$gpu_count,dtype=auto,gpu_memory_utilization=0.8 \
+    --model_args pretrained=allenai/OLMo-2-1124-7B,revision=$r,tensor_parallel_size=$gpu_count,dtype=auto,gpu_memory_utilization=0.7 \
     --tasks hellaswag \
     --num_fewshot 10 \
     --batch_size auto \
