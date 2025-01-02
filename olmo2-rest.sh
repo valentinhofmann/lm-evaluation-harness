@@ -29,7 +29,7 @@ do
     --output_path results_olmo2
 
     lm_eval --model vllm \
-    --model_args pretrained=allenai/OLMo-2-1124-7B,revision=$r,tensor_parallel_size=$gpu_count,dtype=auto,gpu_memory_utilization=0.6 \
+    --model_args pretrained=allenai/OLMo-2-1124-7B,revision=$r,tensor_parallel_size=$gpu_count,dtype=auto,gpu_memory_utilization=0.5 \
     --tasks winogrande \
     --num_fewshot 5 \
     --batch_size auto \
