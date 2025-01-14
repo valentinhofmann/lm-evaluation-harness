@@ -35,4 +35,4 @@ do
     --batch_size auto \
     --log_samples \
     --output_path results_k2
-done <k2-revisions.txt
+done <k2-revisions-2.txt
